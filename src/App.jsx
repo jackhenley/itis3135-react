@@ -18,7 +18,6 @@ import WallStreetGame from './pages/WallStreetGame';
 import JackHenleyDesigns from './pages/JackHenleyDesigns';
 import CrappyPage from './pages/CrappyPage';
 
-document.title = 'Jack Henley | Home';
 
 export default function App() {
   return (
