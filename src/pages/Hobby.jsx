@@ -1,8 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import './Hobby.css';
 
-document.title = 'Jack Henley | Hobby';
-
 const SECTIONS = ['who', 'what', 'when', 'where', 'how', 'why', 'ai-prompts'];
 
 // ASCII Snowboard renderer (ported from original)
@@ -128,6 +126,10 @@ export default function Hobby() {
     if (window.location.hash) return window.location.hash.substring(1);
     return localStorage.getItem('activeSection') || 'who';
   });
+
+  useEffect(() => {
+    document.title = 'Jack Henley | Hobby';
+  }, []);
 
   function goTo(id) {
     setActiveSection(id);

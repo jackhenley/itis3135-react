@@ -1,10 +1,12 @@
+import { useEffect } from 'react';
 import '../styles/itis3135.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-document.title = 'Jack Henley | Course Home';
-
 export default function Itis3135Home() {
+  useEffect(() => {
+    document.title = 'Jack Henley | Course Home';
+  }, []);
   return (
     <div className="itis3135-layout">
       <Header />

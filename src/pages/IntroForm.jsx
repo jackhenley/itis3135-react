@@ -1,6 +1,4 @@
-import { useState, useRef } from 'react';
-
-document.title = 'Jack Henley | Intro Form';
+import { useState, useEffect, useRef } from 'react';
 
 const defaultValues = {
   'first-name': 'Jack',
@@ -76,6 +74,10 @@ export default function IntroForm() {
   const [jsonText, setJsonText] = useState('');
   const [copyLabel, setCopyLabel] = useState('Copy to Clipboard');
   const fileRef = useRef(null);
+
+  useEffect(() => {
+    document.title = 'Jack Henley | Intro Form';
+  }, []);
 
   function setField(key, val) {
     setFields(prev => ({ ...prev, [key]: val }));

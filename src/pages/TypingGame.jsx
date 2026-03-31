@@ -2,8 +2,6 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import './TypingGame.css';
 
-document.title = 'Jack Henley | Typing Game';
-
 const WORDS = [
   "the","be","to","of","and","a","in","that","have","it","for","not","on","with","he","as","you","do","at","this",
   "but","his","by","from","they","we","say","her","she","or","an","will","my","one","all","would","there","their","what",
@@ -45,6 +43,10 @@ export default function TypingGame() {
   const [resultMsg, setResultMsg] = useState('');
   const timerRef = useRef(null);
   const inputRef = useRef(null);
+
+  useEffect(() => {
+    document.title = 'Jack Henley | Typing Game';
+  }, []);
 
   const stopTimer = useCallback(() => {
     if (timerRef.current) {

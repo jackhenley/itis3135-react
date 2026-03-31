@@ -1,6 +1,9 @@
-document.title = 'Jack Henley | Jack Henley Designs';
+import { useEffect } from 'react';
 
 export default function JackHenleyDesigns() {
+  useEffect(() => {
+    document.title = 'Jack Henley | Jack Henley Designs';
+  }, []);
   return (
     <div style={{ backgroundColor: '#F1FFFA', minHeight: '100vh' }}>
       <header style={{ backgroundColor: '#F1FFFA', padding: '20px', textAlign: 'left' }}>
