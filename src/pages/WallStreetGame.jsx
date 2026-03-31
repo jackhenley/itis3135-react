@@ -2,6 +2,8 @@ import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './WallStreetGame.css';
 
+document.title = 'Jack Henley | Wall Street Game';
+
 export default function WallStreetGame() {
   const outputRef = useRef(null);
   const inputRef = useRef(null);

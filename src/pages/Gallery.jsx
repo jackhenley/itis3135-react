@@ -2,6 +2,8 @@ import '../styles/itis3135.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
+document.title = 'Jack Henley | Gallery';
+
 export default function Gallery() {
   return (
     <div className="itis3135-layout">

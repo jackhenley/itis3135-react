@@ -1,3 +1,5 @@
+document.title = 'Jack Henley | Design Page';
+
 export default function JackHenleyDesigns() {
   return (
     <div style={{ backgroundColor: '#F1FFFA', minHeight: '100vh' }}>

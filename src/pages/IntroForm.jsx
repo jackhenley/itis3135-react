@@ -1,5 +1,7 @@
 import { useState, useRef } from 'react';
 
+document.title = 'Jack Henley | Intro Form';
+
 const defaultValues = {
   'first-name': 'Jack',
   'middle-name': '',

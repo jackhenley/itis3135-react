@@ -1,7 +1,9 @@
 export default function CrappyPage() {
   return (
     <div>
+      <title>Jack Henley | Crappy Page</title>
       <h1>My Dream Car</h1>
+
 
       <img
         src="/images/grRolla"

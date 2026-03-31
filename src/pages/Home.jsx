@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import '../styles/root.css';
 import Footer from '../components/Footer';
 
+document.title = 'Jack Henley | Home';
+
 export default function Home() {
   return (
     <div className="root-layout">
