@@ -1,0 +1,296 @@
+:root {
+  --sea-green: #519872ff;
+  --charcoal: #4c4c47ff;
+  --lavender-grey: #848fa5ff;
+  --dark-amethyst: #23022eff;
+  --sand-dune: #e5dcc5ff;
+}
+
+.hobby-page {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--charcoal);
+  color: var(--sand-dune);
+}
+
+.hobby-nav {
+  background-color: var(--dark-amethyst);
+  color: var(--sea-green);
+  padding: 10px 0;
+  text-align: center;
+}
+
+.section-link {
+  color: var(--sand-dune);
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.section-link:hover {
+  background-color: var(--charcoal);
+}
+
+.hobby-page section {
+  min-height: 100vh;
+  display: none;
+  background-color: var(--lavender-grey);
+  overflow-y: auto;
+  position: relative;
+}
+
+.hobby-page section.active {
+  display: block;
+}
+
+.hobby-page h2 {
+  margin: 0 auto 1.5rem auto;
+  font-family: "bebas neue", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.hobby-page section p {
+  line-height: 1.6;
+}
+
+/* Who */
+#who {
+  padding: 20px;
+}
+#who figure {
+  float: left;
+  width: 50%;
+  margin: 0 1rem 1rem 0;
+}
+#who figure img {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+}
+#who figure figcaption {
+  width: 100%;
+  text-align: left;
+  font-style: italic;
+  margin-top: 8px;
+}
+#who figure figcaption a {
+  color: var(--sand-dune);
+  text-decoration: underline;
+}
+#who figure:first-of-type {
+  float: left;
+  width: 30%;
+  margin: 0 1rem 1rem 0;
+}
+#who p {
+  float: left;
+  width: 35%;
+  margin: 0 1rem 1rem 0;
+}
+#who figure:last-of-type {
+  float: left;
+  width: 35%;
+  margin: 0;
+}
+
+/* What */
+#what {
+  padding: 20px;
+}
+#what .scene {
+  float: left;
+  width: 50%;
+  margin-right: 1rem;
+}
+#what #board {
+  min-width: 0;
+  width: 100%;
+}
+#what figure {
+  float: right;
+  width: 45%;
+  margin: 0;
+}
+#what figure img {
+  width: 100%;
+  max-width: none;
+}
+#what figure figcaption {
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+  margin-top: 8px;
+}
+#what figure figcaption a {
+  color: var(--sand-dune);
+  text-decoration: underline;
+}
+#what p {
+  clear: both;
+}
+#what a {
+  color: var(--sand-dune);
+  text-decoration: underline;
+  display: inline;
+}
+
+/* Snowboard animation */
+.scene {
+  background: var(--lavender-grey);
+  position: relative;
+}
+.scene::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+#board {
+  font-family: "bebas neue", monospace;
+  font-size: 11px;
+  line-height: 1.15;
+  color: var(--sand-dune);
+  white-space: pre;
+  text-shadow: 0px 0px 8px var(--charcoal);
+  min-width: 780px;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* When */
+#when {
+  padding: 20px;
+}
+#when p {
+  clear: both;
+  text-align: left;
+  padding: 1.5rem 0;
+  margin: 0;
+}
+#when figure {
+  float: left;
+  width: 45%;
+  text-align: left;
+  margin-right: 1rem;
+}
+#when figure img {
+  width: 100%;
+  max-width: none;
+}
+#when figure figcaption p {
+  padding: 1rem 0;
+  margin: 0;
+}
+#when figure figcaption a {
+  font-style: italic;
+  text-decoration: underline;
+  color: var(--sand-dune);
+}
+#when iframe {
+  float: right;
+  width: 50%;
+  height: 700px;
+  border: none;
+  border-radius: 8px;
+}
+#when div a {
+  color: var(--sand-dune);
+  text-decoration: underline;
+  float: right;
+}
+
+/* Where */
+#where {
+  padding: 20px;
+}
+#where iframe {
+  float: left;
+  width: 40%;
+  height: 40%;
+}
+#where figure {
+  float: right;
+  width: 50%;
+}
+#where figure img {
+  max-width: 70%;
+  max-height: auto;
+  border-radius: 1%;
+}
+#where p {
+  clear: both;
+}
+
+/* How */
+#how {
+  padding: 20px;
+}
+#how ul {
+  list-style: square;
+  padding-left: 1.5rem;
+}
+#how ul li {
+  margin: 0.5rem 0;
+}
+#how figure {
+  margin: 1.5rem auto;
+  text-align: center;
+}
+#how figure img {
+  border-width: 2px;
+  border-color: var(--sand-dune);
+  border-style: solid;
+}
+#how figure figcaption p {
+  font-style: italic;
+  color: var(--sand-dune);
+}
+#how figure figcaption a {
+  color: var(--sand-dune);
+  text-decoration: underline;
+}
+
+/* Why */
+#why {
+  padding: 20px;
+}
+#why figure {
+  margin: 1.5rem auto;
+  text-align: center;
+}
+#why figure figcaption p {
+  font-style: italic;
+  color: var(--sand-dune);
+}
+#why figure figcaption a {
+  color: var(--sand-dune);
+  text-decoration: underline;
+}
+
+/* AI Prompts */
+.hobby-page h3 {
+  text-decoration: underline;
+}
+#ai-prompts {
+  padding: 20px;
+}
+#ai-prompts p {
+  margin-bottom: 1.5rem;
+}
+
+.hobby-footer {
+  background-color: var(--dark-amethyst);
+  color: var(--sea-green);
+  text-align: center;
+  padding: 10px 0;
+}
+.hobby-footer a {
+  color: var(--sea-green);
+  text-decoration: underline;
+  font-size: 1.1rem;
+}

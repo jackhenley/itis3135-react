@@ -1,0 +1,68 @@
+/* CSS HSL from coolors.co*/
+/* --coffee-bean: rgb(71, 32, 2);
+--thistle: hsla(275, 18%, 79%, 1);
+--tea-green: hsla(108, 100%, 89%, 1);
+--indigo-velvet: hsla(253, 51%, 39%, 1);
+--school-bus-yellow: hsla(47, 100%, 50%, 1);
+ */
+
+.itis3135-layout header a {
+  color: hsla(108, 100%, 89%, 1);
+  font-size: 18px;
+  font-family: frutiger, sans-serif;
+  background-color: rgb(71, 32, 2);
+  padding: 5px 5px 5px 5px;
+  text-decoration: none;
+  max-width: 10px;
+  margin: 0 auto;
+}
+
+.itis3135-layout h1 {
+  color: hsla(47, 100%, 50%, 1);
+  font-family: archivo-black;
+  max-width: fit-content;
+  margin: auto;
+}
+
+.itis3135-layout {
+  background-color: hsla(253, 51%, 39%, 1);
+  min-height: 100vh;
+}
+
+.itis3135-layout h2 {
+  color: hsla(275, 18%, 79%, 1);
+  font-family: Frutiger, sans-serif;
+}
+
+.itis3135-layout h3 {
+  color: hsla(275, 18%, 79%, 1);
+  font-family: Frutiger, sans-serif;
+}
+
+.itis3135-layout p {
+  font-family: Frutiger, sans-serif;
+  color: hsla(108, 100%, 89%, 1);
+  font-size: 18px;
+  max-width: 800px;
+  margin: 10px 20px 10px 20px;
+}
+
+.itis3135-layout ul {
+  font-family: Frutiger, sans-serif;
+  color: hsla(47, 100%, 50%, 1);
+  font-size: 18px;
+  max-width: 800px;
+  margin: 10px 20px 10px 40px;
+}
+
+.itis3135-layout footer {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+}
+.itis3135-layout footer a {
+  color: hsla(108, 100%, 89%, 1);
+  font-size: 18px;
+  font-family: frutiger, sans-serif;
+  text-decoration: none;
+}

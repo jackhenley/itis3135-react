@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&display=swap');
+
+:root {
+  --bg:        #050a0e;
+  --bg2:       #0a1520;
+  --bg3:       #0d1e2e;
+  --cyan:      #00e5ff;
+  --cyan-dim:  #007a8c;
+  --green:     #00ff88;
+  --green-dim: #007a42;
+  --red:       #ff3d5a;
+  --red-dim:   #7a1a28;
+  --yellow:    #ffd600;
+  --white:     #e8f4f8;
+  --dim:       #4a6070;
+  --magenta:   #e040fb;
+  --font-mono: 'Share Tech Mono', monospace;
+  --font-head: 'Orbitron', monospace;
+}
+
+.wsw-body {
+  background: var(--bg);
+  color: var(--white);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(0,229,255,0.04) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(0,255,136,0.03) 0%, transparent 50%);
+  position: relative;
+}
+
+.wsw-body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0,0,0,0.08) 2px,
+    rgba(0,0,0,0.08) 4px
+  );
+  pointer-events: none;
+  z-index: 100;
+}
+
+.wsw-body::after {
+  content: '';
+  position: fixed; inset: 0;
+  box-shadow: inset 0 0 120px rgba(0,229,255,0.06);
+  pointer-events: none;
+  z-index: 101;
+}
+
+#back-link {
+  display: inline-block;
+  margin: 16px;
+  padding: 8px 12px;
+  background: var(--bg2);
+  color: var(--cyan);
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+#terminal {
+  width: min(900px, 98vw);
+  height: min(680px, 96vh);
+  background: var(--bg2);
+  border: 1px solid var(--cyan-dim);
+  border-radius: 4px;
+  box-shadow:
+    0 0 0 1px rgba(0,229,255,0.1),
+    0 0 40px rgba(0,229,255,0.12),
+    0 0 80px rgba(0,229,255,0.05);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#titlebar {
+  background: var(--bg3);
+  border-bottom: 1px solid var(--cyan-dim);
+  padding: 7px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+.dot { width: 11px; height: 11px; border-radius: 50%; }
+.dot-r { background: #ff5f57; }
+.dot-y { background: #febc2e; }
+.dot-g { background: #28c840; }
+#titlebar-text {
+  font-family: var(--font-head);
+  font-size: 11px;
+  color: var(--cyan-dim);
+  letter-spacing: 2px;
+  margin-left: 8px;
+  text-transform: uppercase;
+}
+
+#output {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px 14px 4px;
+  font-size: 13px;
+  line-height: 1.55;
+  scrollbar-width: thin;
+  scrollbar-color: var(--cyan-dim) transparent;
+}
+#output::-webkit-scrollbar { width: 4px; }
+#output::-webkit-scrollbar-track { background: transparent; }
+#output::-webkit-scrollbar-thumb { background: var(--cyan-dim); border-radius: 2px; }
+
+#input-row {
+  border-top: 1px solid var(--cyan-dim);
+  background: var(--bg3);
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+#prompt-label { color: var(--cyan); font-weight: bold; }
+#cmd-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--white);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  caret-color: var(--cyan);
+}
+#cmd-input::placeholder { color: var(--dim); }
+
+.c-cyan    { color: var(--cyan); }
+.c-green   { color: var(--green); }
+.c-red     { color: var(--red); }
+.c-yellow  { color: var(--yellow); }
+.c-dim     { color: var(--dim); }
+.c-white   { color: var(--white); }
+.c-magenta { color: var(--magenta); }
+.bold      { font-weight: bold; }
+
+.line { white-space: pre; display: block; }
+.line-anim { animation: fadein 0.12s ease; }
+@keyframes fadein { from { opacity: 0; transform: translateY(2px); } to { opacity: 1; transform: none; } }
+
+.blink { animation: blink 1s step-end infinite; }
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+.flash-up   { animation: flashup 0.4s ease; }
+.flash-down { animation: flashdn 0.4s ease; }
+@keyframes flashup { 0%{background:rgba(0,255,136,0.25)} 100%{background:transparent} }
+@keyframes flashdn { 0%{background:rgba(255,61,90,0.25)}  100%{background:transparent} }
+
+#ticker-bar {
+  border-bottom: 1px solid var(--cyan-dim);
+  background: var(--bg);
+  padding: 4px 14px;
+  font-size: 11px;
+  color: var(--dim);
+  white-space: nowrap;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+#ticker-inner {
+  display: inline-block;
+  animation: scroll-ticker 30s linear infinite;
+}
+@keyframes scroll-ticker {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}

@@ -1,0 +1,59 @@
+/* CSS HSL */
+/* --charcoal-brown: hsla(34, 6%, 24%, 1);
+--aquamarine: hsla(150, 97%, 85%, 1);
+--mauve: hsla(265, 100%, 87%, 1);
+--amber-earth: hsla(33, 83%, 50%, 1);
+--crayola-blue: hsla(221, 100%, 61%, 1); */
+:root {
+  /* CSS HEX */
+--mauve-shadow: #5e4955ff;
+--lavender: #e9ebf8ff;
+--pale-slate: #b4b8c5ff;
+--fern: #556f44ff;
+--dark-slate-grey: #283f3bff;
+}
+
+.root-layout {
+  background-color: var(--dark-slate-grey);
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.root-layout p {
+  color: var(--pale-slate);
+  padding-bottom: 20px;
+}
+
+.root-layout nav {
+  background-color: var(--fern);
+  padding: 10px;
+}
+
+.root-layout nav a {
+  color: var(--pale-slate);
+  font-size: 18px;
+  padding: 80px;
+}
+
+.root-layout h1 {
+  color: var(--lavender);
+  margin-top: 0;
+}
+
+.root-layout h2 {
+  color: var(--lavender);
+}
+
+.root-layout footer {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+}
+
+.root-layout footer a {
+  color: var(--pale-slate);
+  font-size: 22px;
+  text-decoration-color: var(--pale-slate);
+  text-decoration: none;
+}
