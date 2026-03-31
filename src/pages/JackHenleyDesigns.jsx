@@ -1,4 +1,4 @@
-document.title = 'Jack Henley | Design Page';
+document.title = 'Jack Henley | Jack Henley Designs';
 
 export default function JackHenleyDesigns() {
   return (
