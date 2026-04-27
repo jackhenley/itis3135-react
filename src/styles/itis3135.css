@@ -58,7 +58,8 @@
 .itis3135-layout footer {
   position: fixed;
   bottom: 10px;
-  right: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .itis3135-layout footer a {
   color: hsla(108, 100%, 89%, 1);

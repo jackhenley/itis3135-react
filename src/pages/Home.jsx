@@ -15,7 +15,6 @@ export default function Home() {
           <Link to="/">Home Page</Link>
           <Link to="/itis3135/contract">Contract Page</Link>
           <Link to="/itis3135/introduction">My introduction page</Link>
-          <Link to="/games">Games page</Link>
         </nav>
       </header>
       <main>

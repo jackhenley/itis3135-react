@@ -15,6 +15,7 @@ export default function Header() {
         <Link to="/itis3135/inventory">Inventory</Link>
         <Link to="/itis3135/instructions">Instructions</Link>
         <Link to="/itis3135/highlight">Highlight</Link>
+        <Link to="/itis3135/Slideshow">Slideshow</Link>
       </nav>
       <br />
       <nav id="second-menu">

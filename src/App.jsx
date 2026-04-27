@@ -17,6 +17,7 @@ import TypingGame from './pages/TypingGame';
 import WallStreetGame from './pages/WallStreetGame';
 import JackHenleyDesigns from './pages/JackHenleyDesigns';
 import CrappyPage from './pages/CrappyPage';
+import Slideshow from './pages/Slideshow';
 
 
 export default function App() {
@@ -40,6 +41,7 @@ export default function App() {
         <Route path="/games/typing" element={<TypingGame />} />
         <Route path="/games/wallstreet" element={<WallStreetGame />} />
         <Route path="/stuff/crappy-page" element={<CrappyPage />} />
+        <Route path="/itis3135/slideshow" element={<Slideshow />} />
       </Routes>
     </BrowserRouter>
   );
